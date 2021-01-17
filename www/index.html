@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello wasm-pack!</title>
+    <style>
+      body {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      #fps {
+        white-space: pre;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript
+      >This page contains webassembly and javascript content, please enable
+      javascript in your browser.</noscript
+    >
+    <text>Width:</text>
+    <input type="text" id="width" name="width" value="64" />
+    <text>Height:</text>
+    <input type="text" id="height" name="height" value="64" />
+    <button id="update-dimension">Update</button>
+    <button id="reset-universe">Reset</button>
+    <text>Tick iteration:</text>
+    <input type="text" id="tick-iteration" name="tick-iteration" value="1" />
+    <button id="update-tick-iteration">Update</button>
+    <button id="play-pause"></button>
+    <canvas id="fraud-of-life-canvas"></canvas>
+    <script src="./bootstrap.js"></script>
+  </body>
+</html>
